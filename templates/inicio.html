@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="inicio.css">
+    <title>{{data.titulo}}</title>
+</head>
+
+<body>
+    <h1>{{data.saludo}}</h1>
+    <h2>{{data.principal.upper()}}</h2>
+    <ul>
+        {%for i in palabra%}
+        <li>{{i.capitalize()}}</li>
+        {%endfor %}
+    </ul>
+</body>
+
+</html>
